@@ -11,6 +11,7 @@ class DevilsFruit
 {
         protected:
                 string nombre;
+	
         public:
                 DevilsFruit(string);
 
