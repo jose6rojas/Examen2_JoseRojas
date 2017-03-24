@@ -16,4 +16,7 @@ class Pirata : public Being
 		// raza, edad, nombre, DF, hakiObs, hakiArm, hakiRey, oceano, tripulacion, funcion
 		
 		void setOceano(int);
+		string getOceano() { return oceano; }
+		string getTripulacion() { return tripulacion; }
+		string getFuncion() { return funcion; }
 };

@@ -15,7 +15,7 @@ class Marina : public Being
 										       // hakiObs, hakiArm, hakiRey,
 										       // fechaIngreso, rango
 		
-		// string getFechaIngreso();
+		string getFechaIngreso() { return fechaIngreso; }
 		void setRango(int);
-		// string getRango();
+		string getRango() { return rango; }
 };
