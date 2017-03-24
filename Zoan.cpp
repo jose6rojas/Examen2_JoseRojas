@@ -2,9 +2,9 @@
 
 #include "Zoan.h"
 
-Zoan::Zoan(string nombre, int t) : DevilsFruit(nombre) { setTipo(t); }
+Zoan::Zoan(string nombre, string tipo) : DevilsFruit(nombre) { this -> tipo = tipo; }
 
-void Zoan::setTipo(int t)
+/* void Zoan::setTipo(int t)
 {
 	if(t == 1)
         	tipo = "Normal";
@@ -14,5 +14,5 @@ void Zoan::setTipo(int t)
         	tipo = "Legendaria";
       	else
         	tipo = "Normal";
-}
+} */
 string Zoan::getTipo() { return tipo; }

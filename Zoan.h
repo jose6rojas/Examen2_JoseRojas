@@ -11,9 +11,9 @@ class Zoan : public DevilsFruit
 		string tipo;
 	
 	public:
-		Zoan(string, int); // nombre, tipo
+		Zoan(string, string); // nombre, tipo
 		
-		void setTipo(int);
+		// void setTipo(int);
 		string getTipo();
 };
 
