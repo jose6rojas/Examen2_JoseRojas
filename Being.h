@@ -16,9 +16,13 @@ class Being
 		string nombre;
 		bool hasDF;
 		DevilsFruit* DF;
+		bool hakiObs;
+		bool hakiArm;
+		bool hakiRey;
 	
 	public:
-		Being(int, int, string, DevilsFruit*); // raza, edad, nombre, DevilsFruit*
+		Being(int, int, string, DevilsFruit*, bool, bool, bool); // raza, edad, nombre, DevilsFruit*,
+									 // hakiObs, hakiArm, hakiRey
 		
 		// raza
 		void setRaza(int);
@@ -28,10 +32,17 @@ class Being
 		// nombre
 		string getNombre();
 		// hasDF
-		void setHasDF();
+		void setHasDF(bool);
 		bool getHasDF();
 		// DF
 		DevilsFruit* getDF();
+		// hakis
+		void setHakiObs(bool);
+		bool getHakiObs();
+		void setHakiArm(bool);
+		bool getHakiArm();
+		void setHakiRey(bool);
+		bool getHakiRey();
 		
 		~Being() { delete DF; }
 };
