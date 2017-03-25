@@ -2,9 +2,10 @@
 
 #include "Being.h"
 
-Being::Being(int r, int edad, string nombre, DevilsFruit* DF, bool hakiObs, bool hakiArm, bool hakiRey)
+Being::Being(string raza, int edad, string nombre, DevilsFruit* DF, bool hakiObs, bool hakiArm, bool hakiRey)
 {
-	setRaza(r);
+	// setRaza(r);
+	this -> raza = raza;
 	this -> edad = edad;
 	this -> nombre = nombre;
 	// hasDF = false;
@@ -15,7 +16,7 @@ Being::Being(int r, int edad, string nombre, DevilsFruit* DF, bool hakiObs, bool
 }
 
 // raza
-void Being::setRaza(int r)
+/* void Being::setRaza(int r)
 {
 	if(r == 1)
 		raza = "Gyojin";
@@ -31,7 +32,7 @@ void Being::setRaza(int r)
 		raza = "Skypieans";
 	else
 		raza = "Humano";
-}
+} */
 string Being::getRaza() { return raza; }
 // edad
 int Being::getEdad() { return edad; }

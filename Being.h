@@ -21,11 +21,11 @@ class Being
 		bool hakiRey;
 	
 	public:
-		Being(int, int, string, DevilsFruit*, bool, bool, bool); // raza, edad, nombre, DF,
+		Being(string, int, string, DevilsFruit*, bool, bool, bool); // raza, edad, nombre, DF,
 									 // hakiObs, hakiArm, hakiRey
 		
 		// raza
-		void setRaza(int);
+		// void setRaza(int);
 		string getRaza();
 		// edad
 		int getEdad();

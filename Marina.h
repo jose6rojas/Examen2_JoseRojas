@@ -11,11 +11,11 @@ class Marina : public Being
 		string rango;
 	
 	public:
-		Marina(int, int, string, DevilsFruit*, bool, bool, bool, string, int); // raza, edad, nombre, DF,
-										       // hakiObs, hakiArm, hakiRey,
-										       // fechaIngreso, rango
+		Marina(string, int, string, DevilsFruit*, bool, bool, bool, string, string); // raza, edad, nombre, DF,
+										       	    // hakiObs, hakiArm, hakiRey,
+										       	    // fechaIngreso, rango
 		
 		string getFechaIngreso() { return fechaIngreso; }
-		void setRango(int);
+		// void setRango(int);
 		string getRango() { return rango; }
 };

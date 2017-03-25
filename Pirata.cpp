@@ -2,14 +2,15 @@
 
 #include "Pirata.h"
 
-Pirata::Pirata(int r1, int edad, string nombre, DevilsFruit* DF, bool hakiObs, bool hakiArm, bool hakiRey, int o, string tripulacion, string funcion) : Being(r1, edad, nombre, DF, hakiObs, hakiArm, hakiRey)
+Pirata::Pirata(string raza, int edad, string nombre, DevilsFruit* DF, bool hakiObs, bool hakiArm, bool hakiRey, string oceano, string tripulacion, string funcion) : Being(raza, edad, nombre, DF, hakiObs, hakiArm, hakiRey)
 {
-	setOceano(o);
+	// setOceano(o);
+	this -> oceano = oceano;
 	this -> tripulacion = tripulacion;
 	this -> funcion = funcion;
 }
 
-void Pirata::setOceano(int o)
+/* void Pirata::setOceano(int o)
 {
 	if(o == 1)
 		oceano = "East";
@@ -25,4 +26,4 @@ void Pirata::setOceano(int o)
 		oceano = "New World";
 	else
 		oceano = "North Blue";
-}
+} */

@@ -2,7 +2,7 @@
 
 #include "Revolucionario.h"
 
-Revolucionario::Revolucionario(int raza, int edad, string nombre, DevilsFruit* DF, bool hakiObs, bool hakiArm, bool hakiRey, string fechaIngreso) : Being(raza, edad, nombre, DF, hakiObs, hakiArm, hakiRey)
+Revolucionario::Revolucionario(string raza, int edad, string nombre, DevilsFruit* DF, bool hakiObs, bool hakiArm, bool hakiRey, string fechaIngreso) : Being(raza, edad, nombre, DF, hakiObs, hakiArm, hakiRey)
 {
 	this -> fechaIngreso = fechaIngreso;
 }

@@ -2,13 +2,14 @@
 
 #include "Marina.h"
 
-Marina::Marina(int raza, int edad, string nombre, DevilsFruit* DF, bool hakiObs, bool hakiArm, bool hakiRey, string fechaIngreso, int r) : Being(raza, edad, nombre, DF, hakiObs, hakiArm, hakiRey)
+Marina::Marina(string raza, int edad, string nombre, DevilsFruit* DF, bool hakiObs, bool hakiArm, bool hakiRey, string fechaIngreso, string rango) : Being(raza, edad, nombre, DF, hakiObs, hakiArm, hakiRey)
 {
 	this -> fechaIngreso = fechaIngreso;
-	setRango(r);
+	// setRango(r);
+	this -> rango = rango;
 }
 
-void Marina::setRango(int r)
+/* void Marina::setRango(int r)
 {
 	if(r == 1)
 		rango = "Cadete";
@@ -22,4 +23,4 @@ void Marina::setRango(int r)
 		rango = "Almirante de Flota";
 	else
 		rango = "Cadete";
-}
+} */

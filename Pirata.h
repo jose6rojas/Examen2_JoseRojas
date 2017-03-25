@@ -12,10 +12,10 @@ class Pirata : public Being
 		string funcion;
 	
 	public:
-		Pirata(int, int, string, DevilsFruit*, bool, bool, bool, int, string, string);
+		Pirata(string, int, string, DevilsFruit*, bool, bool, bool, string, string, string);
 		// raza, edad, nombre, DF, hakiObs, hakiArm, hakiRey, oceano, tripulacion, funcion
 		
-		void setOceano(int);
+		// void setOceano(int);
 		string getOceano() { return oceano; }
 		string getTripulacion() { return tripulacion; }
 		string getFuncion() { return funcion; }
